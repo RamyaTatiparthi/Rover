@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/about.css">
-    <title>Rover</title>
+    <title>Rover/about</title>
 </head>
 
 <body>
@@ -20,8 +20,8 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Albums</a></li>
-                <li><a href="#">Playlists</a></li>
+                <li><a href="index.html#albums">Albums</a></li>
+                <li><a href="index.html#playlists">Playlists</a></li>
                 <li><a href="#">Profile</a></li>
             </ul>
         </nav>
@@ -33,58 +33,62 @@
             <h2>Team Members </h2>
             <div class="cards-container">
                 <div class="profile-card">
-                    <img src="images/rahul.jpg" alt="Artist pi">
+                    <img src="images/profiles/rahul.jpg" alt="Artist pi">
                     <a href="">
                         <h3>Rahul Reddy Vemparala</h3>
                     </a>
                     <div class="socials">
                         <h4>Social Handles</h4>
                         <ul class="card-description">
-                            <li><a href="mailto">email</a></li>
-                            <li><a href="https://https://github.com/rahulVemparala"">Github</a></li>
-                            <li><a href=" https://linkedin.com/in/rahul-reddy-vemparala-11609924a">LinkedIn</a></li>
+                            <li><a href="mailto:rahulreddyvemparala@gmail.com" target="_blank">email</a></li>
+                            <li><a href="https://https://github.com/rahulVemparala" target="_blank">Github</a></li>
+                            <li><a href=" https://linkedin.com/in/rahul-reddy-vemparala-11609924a"
+                                    target="_blank">LinkedIn</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="profile-card">
-                    <img src="images/rahul.jpg" alt="Artist pi">
+                    <img src="images/profiles/rahul.jpg" alt="Artist pi">
                     <a href="">
-                        <h3>Akhila Sree</h3>
+                        <h3>Rahul Reddy Vemparala</h3>
                     </a>
                     <div class="socials">
                         <h4>Social Handles</h4>
                         <ul class="card-description">
-                            <li><a href="mailto">email</a></li>
-                            <li><a href="https://https://github.com/rahulVemparala"">Github</a></li>
-                            <li><a href=" https://linkedin.com/in/rahul-reddy-vemparala-11609924a">LinkedIn</a></li>
+                            <li><a href="mailto:rahulreddyvemparala@gmail.com" target="_blank">email</a></li>
+                            <li><a href="https://https://github.com/rahulVemparala" target="_blank">Github</a></li>
+                            <li><a href=" https://linkedin.com/in/rahul-reddy-vemparala-11609924a"
+                                    target="_blank">LinkedIn</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="profile-card">
-                    <img src="images/rahul.jpg" alt="Artist pi">
+                    <img src="images/profiles/rahul.jpg" alt="Artist pi">
                     <a href="">
-                        <h3>Ramya</h3>
+                        <h3>Rahul Reddy Vemparala</h3>
                     </a>
                     <div class="socials">
                         <h4>Social Handles</h4>
                         <ul class="card-description">
-                            <li><a href="mailto">email</a></li>
-                            <li><a href="https://https://github.com/rahulVemparala"">Github</a></li>
-                            <li><a href=" https://linkedin.com/in/rahul-reddy-vemparala-11609924a">LinkedIn</a></li>
+                            <li><a href="mailto:rahulreddyvemparala@gmail.com" target="_blank">email</a></li>
+                            <li><a href="https://https://github.com/rahulVemparala" target="_blank">Github</a></li>
+                            <li><a href=" https://linkedin.com/in/rahul-reddy-vemparala-11609924a"
+                                    target="_blank">LinkedIn</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="profile-card">
-                    <img src="images/rahul.jpg" alt="Artist pi">
+                    <img src="images/profiles/rahul.jpg" alt="Artist pi">
                     <a href="">
-                        <h3>Akhila siddabutala</h3>
+                        <h3>Rahul Reddy Vemparala</h3>
                     </a>
                     <div class="socials">
                         <h4>Social Handles</h4>
                         <ul class="card-description">
-                            <li><a href="mailto">email</a></li>
-                            <li><a href="https://https://github.com/rahulVemparala"">Github</a></li>
-                            <li><a href=" https://linkedin.com/in/rahul-reddy-vemparala-11609924a">LinkedIn</a></li>
+                            <li><a href="mailto:rahulreddyvemparala@gmail.com" target="_blank">email</a></li>
+                            <li><a href="https://https://github.com/rahulVemparala" target="_blank">Github</a></li>
+                            <li><a href=" https://linkedin.com/in/rahul-reddy-vemparala-11609924a"
+                                    target="_blank">LinkedIn</a></li>
                         </ul>
                     </div>
                 </div>
@@ -112,5 +116,19 @@
             </div>
     </main>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('a[href^="#"]').on('click', function (event) {
+            var target = $(this.getAttribute('href'));
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+            }
+        });
+    });
+</script>
 
 </html>
